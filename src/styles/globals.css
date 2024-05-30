@@ -1,0 +1,19 @@
+/* src/styles/globals.css */
+body {
+  background-color: aquamarine;
+  background-image: url(/images/backgroundd.jpg);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
