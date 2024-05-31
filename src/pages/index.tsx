@@ -20,6 +20,9 @@ const Home: React.FC = () => {
             <p className={styles.description}>
               Hi, I am Suraj Thapa, a Web Developer.
             </p>
+            <a href="/mycv.pdf" download className={styles.downloadLink}>
+              Download CV
+            </a>
           </div>
           <div className={styles.imageContainer}>
             <Image

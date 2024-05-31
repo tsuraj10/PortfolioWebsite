@@ -85,3 +85,20 @@
 .myImage {
   border-radius: 100%; /* Optional: Add some styling to the image */
 }
+
+.downloadLink {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.25rem;
+  font-size: 1.25rem;
+  color: #fff;
+  background-color: #0070f3;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.15s ease;
+}
+
+.downloadLink:hover,
+.downloadLink:focus {
+  background-color: #005bb5;
+}
