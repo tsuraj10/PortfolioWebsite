@@ -1,5 +1,3 @@
-// src/pages/projects.tsx
-
 import styles from "../styles/Projects.module.css";
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
@@ -11,7 +9,7 @@ const projects = [
     description:
       "This is the simple ecommerce website using html, css and javascript.",
     imageUrl: "/images/project1.jpg",
-    link: "https://tsuraj.com.np/",
+    link: "https://tsuraj10.github.io/ecommerce/",
   },
   {
     title: "Personal Website",
@@ -19,7 +17,7 @@ const projects = [
     imageUrl: "/images/project2.jpg",
     link: "https://tsuraj.com.np/",
   },
-  // Add more projects as needed
+  // Can add more projects as needed
 ];
 
 const Projects: React.FC = () => {
