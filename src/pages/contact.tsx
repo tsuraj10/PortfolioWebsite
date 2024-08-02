@@ -1,9 +1,33 @@
-import React from "react";
 import Head from "next/head";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import styles from "../styles/Contact.module.css";
+import React, { useState } from "react";
+import axios from "axios";
 
 const Contact: React.FC = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [success, setSuccess] = useState("");
+  const [error, setError] = useState("");
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    try {
+      const response = await axios.post("http://localhost:5000/api/contact", {
+        name,
+        email,
+        message,
+      });
+      setSuccess("Message sent successfully!");
+      setName("");
+      setEmail("");
+      setMessage("");
+    } catch (error) {
+      console.log(error);
+      setError("Failed to send message. Please try again.");
+    }
+  };
   return (
     <div className={styles.container}>
       <Head>
@@ -16,7 +40,9 @@ const Contact: React.FC = () => {
         <p className={styles.description}>
           Feel free to reach out to me through the following methods.
         </p>
-        <form className={styles.form}>
+        <form className={styles.form} onSubmit={handleSubmit}>
+          {success && <p>{success}</p>}
+          {error && <p>{error}</p>}
           <div className={styles.inputGroup}>
             <label htmlFor="name">Name</label>
             <input type="text" id="name" name="name" />

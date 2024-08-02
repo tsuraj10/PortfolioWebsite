@@ -11,12 +11,6 @@ const projects = [
     imageUrl: "/images/project1.jpg",
     link: "https://tsuraj10.github.io/ecommerce/",
   },
-  {
-    title: "Personal Website",
-    description: "This is the official website that is remain to build.",
-    imageUrl: "/images/project2.jpg",
-    link: "https://tsuraj.com.np/",
-  },
   // Can add more projects as needed
 ];
 
@@ -31,7 +25,7 @@ const Projects: React.FC = () => {
     <div className={styles.projectsContainer}>
       <Head>
         <title>Projects</title>
-        <meta name="description" content="Projexts Description" />
+        <meta name="description" content="Projects Description" />
       </Head>
       <h1 className={styles.projectsTitle}>Projects</h1>
       <div className={styles.projectGrid}>
@@ -41,7 +35,7 @@ const Projects: React.FC = () => {
               <Image
                 src={project.imageUrl}
                 alt={project.title}
-                width={100}
+                width={50}
                 height={100}
                 className={styles.projectImage}
               />

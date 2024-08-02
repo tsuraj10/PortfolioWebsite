@@ -1,7 +1,11 @@
+// Navbar.tsx
 import Link from "next/link";
 import styles from "../styles/Navbar.module.css";
+import { useAuth } from "../context/AuthContext";
 
 const Navbar: React.FC = () => {
+  const { auth, logout } = useAuth();
+
   return (
     <nav className={styles.navbar}>
       <div className={styles.logo}>
