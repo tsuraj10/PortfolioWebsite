@@ -7,7 +7,7 @@ const projects = [
     title: "Ecommerce Website",
     description:
       "This is the simple ecommerce website using html, css and javascript.",
-    imageUrl: "/images/project1.jpg",
+    imageUrl: "/project1.jpg",
     link: "https://tsuraj10.github.io/ecommerce/",
   },
   // Can add more projects as needed

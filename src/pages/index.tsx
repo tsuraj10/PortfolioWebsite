@@ -28,7 +28,7 @@ const Home: React.FC = () => {
           </div>
           <div className="flex-shrink-0">
             <Image
-              src="/images/surajj.jpg"
+              src="/surajj.jpg"
               alt="My Image"
               width={330}
               height={350}
